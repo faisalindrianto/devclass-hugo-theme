@@ -19,7 +19,7 @@
 
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
-{{- end }}
+{{- end }}  
 
 <!-- Article tags -->
 <!-- <meta property="article:published_time" content="">
