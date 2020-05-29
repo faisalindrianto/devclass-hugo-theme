@@ -2,7 +2,7 @@ name = "Devclass Hugo Theme"
 description = "A theme used in the DEVCLASS JAMstack Live Session"
 tags = []
 features = []
-min_version = "0.71.1"
+min_version = "0.70.0"
 
 [author]
   name = "Faisal Indrianto"
