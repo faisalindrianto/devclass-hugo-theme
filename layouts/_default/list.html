@@ -10,7 +10,7 @@
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
         </header>
-        <small>{{ .Date }}</small>
+        <small>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
         <div class="content">
             {{ .Summary }}
         </div>

@@ -1,11 +1,14 @@
 {{ define "main" }}
     <article class="post">
+        {{ if .Params.image }}
+            <img src="{{ .Image }}" alt="">
+        {{ end }}
         <header>
             <h1>{{ .Title }}</h1>
         </header>
         <div class="content">
             {{ if .Params.date }}
-            <small>{{ .Date }}</small>
+            <small>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
             {{ end }}
             {{ .Content }}
         </div>
